@@ -546,6 +546,7 @@ GameObject:
   - component: {fileID: 1335631061}
   - component: {fileID: 1335631060}
   - component: {fileID: 1335631059}
+  - component: {fileID: 1335631062}
   m_Layer: 2
   m_Name: Character
   m_TagString: Untagged
@@ -632,6 +633,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDirection: 0
   moveSpeed: 0
+  storedMovedSpeed: 0
+  speedupTimer: 2
   moving: 1
   wallLayerMask:
     serializedVersion: 2
@@ -677,9 +680,21 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &1335631062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335631056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60566a23df9456141855023e0cdd0ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
